@@ -7,7 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
 import HomeScreen from '../components/screens/HomeScreen';
-import SettingsScreen from '../components/screens/SettingsScreen';
+// import SettingsScreen from '../components/screens/SettingsScreen';
 
 import { I18n } from 'i18n-js';
 import en from '../components/langs/en.json';
@@ -41,7 +41,7 @@ export default function App() {
         <AppContext.Provider value={appContext}>
           <Stack.Navigator initialRouteName='Home' screenOptions={{ headerShown: false }}>
             <Stack.Screen name='Home' component={HomeScreen} />
-            <Stack.Screen name='Settings' component={SettingsScreen} />
+            {/* <Stack.Screen name='Settings' component={SettingsScreen} /> */}
           </Stack.Navigator>
         </AppContext.Provider>
      
